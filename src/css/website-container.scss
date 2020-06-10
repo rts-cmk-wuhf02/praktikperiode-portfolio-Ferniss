@@ -1,0 +1,33 @@
+figure{
+    margin: 0;
+}
+img{
+    width: 100%;
+    display: block;
+    }
+figcaption{
+background-color: black;
+color: white;
+border: 5px solid lightslategrey;
+text-align: center;
+margin-bottom: 5px;
+}
+p{
+    display: none;
+}
+@media screen and (min-width: 768px){
+    p{
+        display: block;
+    }
+    img{
+        width: 100%;
+        display: block;
+        }
+figcaption{
+    background-color: black;
+    color: white;
+    border: 5px solid lightslategrey;
+    text-align: center;
+    margin-bottom: 5px;
+}
+}
