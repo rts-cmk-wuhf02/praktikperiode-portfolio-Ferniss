@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
     window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-          document.querySelector('nav').style.padding = "5px";
+          document.querySelector('nav').style.padding = "20px";
           document.querySelector('.logo').style.fontSize = "20px";
         } else {
           document.querySelector('nav').style.padding = "25px";
