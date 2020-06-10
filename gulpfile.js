@@ -2,6 +2,8 @@ const gulp = require('gulp')
 const ejs = require("gulp-ejs")
 const rename = require("gulp-rename")
 const connect = require("gulp-connect")
+const sass = require("gulp-sass")
+sass.compiler = require("node-sass")
 
 function html(done) {
     gulp.src("./src/html/templates/*.ejs")
@@ -18,26 +20,17 @@ function watchHtml(params) {
     gulp.watch("./src/html/**/*.ejs", { ignoreInitial: false}, html)
 }
 //////////////////////////
-// function csstask(done) {
+function scss(done) {
+    gulp.src("src/css/**/*.scss")
+        .pipe(sass().on("error", err => console.log(err)))
+        .pipe(gulp.dest("dist/assets/css"))
+        .pipe(connect.reload());
+    done();
+}
+function watchScss() {
+    gulp.watch("src/css/**/*.scss", { ignoreInitial: false }, scss);
+}
 
-//     const postcss = require('gulp-postcss')
-  
-//     gulp.src('src/tailwind/*.css')
-//       // ...
-//       .pipe(postcss([
-//         // ...
-//         require('tailwindcss'),
-//         require('autoprefixer'),
-//         // ...
-//       ]))
-//       // ...
-//       .pipe(gulp.dest('./dist/assets/style'))
-//       .pipe(connect.reload())
-//       done()
-//   }
-//   function watchCss() {
-//       gulp.watch("./src/tailwind/**/*.css", { ignoreInitial: false}, csstask)
-//   }
 /////////////////////////
 function images(done) {
     const imagemin = require("gulp-imagemin")
@@ -69,7 +62,7 @@ function watchJavascript() {
 
 gulp.task("dev", function(done){
     watchHtml();
-    //watchCss();
+    watchScss();
     watchJavascript();
     watchImages();
     connect.server({
