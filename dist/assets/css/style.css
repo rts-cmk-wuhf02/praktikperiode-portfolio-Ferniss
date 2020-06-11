@@ -20,7 +20,7 @@ main {
   padding-top: 25px;
   list-style: none;
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 30px;
   padding: 15px; }
 
 .ul {
@@ -39,13 +39,13 @@ main {
   font-size: 10px; }
 
 .logo {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 700;
   color: #1b1b1b;
   text-decoration: none; }
 
 .pil a {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 700;
   color: #767676;
   text-decoration: none; }
@@ -139,7 +139,8 @@ ul .ease_in {
     padding-left: 0px;
     padding-top: 25px;
     list-style: none;
-    margin-top: 10px; }
+    margin-top: 10px;
+    right: none; }
   .ul {
     margin-left: 5em;
     margin-top: 3em;
@@ -179,7 +180,7 @@ ul .ease_in {
   .nav_wrapper {
     background-color: white;
     z-index: 4;
-    height: 70px;
+    height: 100px;
     width: 100%;
     display: flex; }
   .search_panel {

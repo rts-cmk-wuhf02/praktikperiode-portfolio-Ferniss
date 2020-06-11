@@ -3,18 +3,14 @@ document.addEventListener('DOMContentLoaded', function(){
     function scrollFunction() {
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
           document.querySelector('nav').style.padding = "5px";
-          document.querySelector('.logo').style.fontSize = "20px";
+          document.querySelector('.logo').style.fontSize = "30px";
           document.querySelector('nav').style.backgroundColor = "black";
           document.querySelector('.nav_wrapper').style.backgroundColor = "lightgrey";
-          document.querySelector('.fas').style.color = "white";
-          document.querySelector('.logo').style.color = "white";
         } else {
           document.querySelector('nav').style.padding = "25px";
           document.querySelector('.logo').style.fontSize = "25px";
           document.querySelector('nav').style.backgroundColor = "white";
           document.querySelector('.nav_wrapper').style.backgroundColor = "white";
-          document.querySelector('.fas').style.color = "black";
-          document.querySelector('.logo').style.color = "black";
         }
     }
     let search = document.querySelector('.search_icon');
