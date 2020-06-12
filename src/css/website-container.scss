@@ -2,6 +2,14 @@ body{
     margin: 0;
     text-align: center;
 }
+// section{
+//     width: 100%;
+//     height: 10em;
+//     background-image: url(../images/programming.JPG);
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
 figure{
     margin: 0;
 }
@@ -13,7 +21,6 @@ figcaption{
 background-color: black;
 color: white;
 border: 5px solid lightslategrey;
-margin-bottom: 10%;
 }
 p{
     display: none;
@@ -33,7 +40,7 @@ a{
 }
 .h1{
     font-size: 2em;
-    color: darkred;
+    color: firebrick;
 }
 @media screen and (min-width: 768px){
     .h1{
@@ -69,6 +76,28 @@ a{
     left: 10%;
 }
 .music{
+    width: 30%;
+    padding: 1.4375em 1.875em;
+    background-color: black;
+    color: white;
+    border: 5px solid lightslategrey;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    right: 20%;
+}
+.newsbox{
+    width: 30%;
+    padding: 1.4375em 1.875em;
+    background-color: black;
+    color: white;
+    border: 5px solid lightslategrey;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+.spil{
     width: 30%;
     padding: 1.4375em 1.875em;
     background-color: black;

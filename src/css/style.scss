@@ -9,6 +9,9 @@ nav{
 }
 main{
     padding-top: 10em;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 10em;
 }
 .subul{
     position: absolute;
@@ -57,12 +60,6 @@ h1{
     position: absolute;
     right: 21em;
     top: 20em;
-}
-main{
-    position: relative;
-    z-index: 2;
-    background-color: lightgray;
-    margin-bottom: 10em;
 }
 i{
     margin-left: 50px;
@@ -179,12 +176,6 @@ ul .ease_in{
         position: absolute;
         right: 21em;
         top: 20em;
-    }
-    main{
-        position: relative;
-        z-index: 2;
-        background-color: lightgray;
-        margin-bottom: 10em;
     }
     i{
         margin-left: 50px;
