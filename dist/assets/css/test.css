@@ -6,15 +6,8 @@ video {
   .MediaBox {
     position: relative; }
   .position {
-    width: 40%;
-    padding: 1.4375em 1.875em;
-    background-color: black;
-    color: white;
-    border: 5px solid lightslategrey;
-    text-align: center;
+    width: 35%;
+    height: 30px;
     position: absolute;
-    top: 35%;
-    left: 10%; }
-  .profil {
-    width: 100%;
-    height: 20px; } }
+    top: 25%;
+    left: 0%; } }
