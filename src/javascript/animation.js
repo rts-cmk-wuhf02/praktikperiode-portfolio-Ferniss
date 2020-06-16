@@ -11,10 +11,14 @@ document.addEventListener('DOMContentLoaded',()=>{
     
             text.innerHTML = newDom;
             var length = text.children.length;
-    
+
             for(let i = 0; i < length; i++)
             {
                 text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
             }
+            AOS.init({
+                duration: 2000,
+              })
+              
 })
     

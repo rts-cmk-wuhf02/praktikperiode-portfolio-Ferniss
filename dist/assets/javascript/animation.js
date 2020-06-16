@@ -15,4 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
   for (var _i = 0; _i < length; _i++) {
     text.children[_i].style['animation-delay'] = animationDelay * _i + 'ms';
   }
+
+  AOS.init({
+    duration: 2000
+  });
 });

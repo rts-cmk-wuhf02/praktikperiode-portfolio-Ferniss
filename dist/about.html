@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/website-container.css">
     <link rel="stylesheet" href="/assets/css/style.css">
@@ -14,23 +15,22 @@
 <header>
     <nav>
         <div class="nav_wrapper">
-        <ul class="ul">   
+        <ul class="ul" data-aos="slide-right">   
             <a href="index.html" class="logo">Mathias Ferniss</a> 
              
                
                     <li class="pil"><a href="#">Alder: 20</a></li>
                     <li class="pil dropdown"><a class="activate droparrow" href="#">Skills</a>
                         <ul class="subul">
-                            <li>Programmering</li>
-                            <li>Frontend</li>
-                            <li>html</li>
                             <li>css</li>
-                            <li>Javascript</li>
-                            <li>Programmering</li>
-                            <li>Frontend</li>
+                            <li>ejs</li>
                             <li>html</li>
-                            <li>css</li>
+                            <li>sass</li>
+                            <li>gulp</li>
+                            <li>Frontend</li>
                             <li>Javascript</li>
+                            <li>Animationer</li>
+                            <li>Programmering</li>
                         </ul>
                     </li>
                     <li class="pil"><a class="dropdown" href="about.html">About me</a>
@@ -48,9 +48,9 @@
     <h1 class="h1 text">Frontend Webudvikler</h1>
 
     <div class="MediaBox" data-media-id="910"> <video preload="auto" muted="true" autoplay="" loop="" playsinline="true" src="https://media.roccat.org/img/product-series/series/teaser/1/Vulcan-WebsiteBackgr-2030x1080-4.mp4"></video> 
-        <figure class="position">
+        <figure class="position" data-aos="slide-left">
             <img src="/assets/images/facebook.JPG" alt="">
-            <figcaption class="hifi">
+            <figcaption class="hifi" data-aos="slide-down">
                 <a href="https://hificorner-4957f.firebaseapp.com/"></a>
                 <p class="">Mit navn er Mathias Ferniss. Jeg er 20 år gammel. Jeg kan rigtig godt lig at programmere, jeg er en glad, smilende og sjov person som altid er i positivt humør</p>
             </figcaption>
@@ -61,5 +61,6 @@
 </footer>
 <script src="/assets/javascript/app.js"></script>
 <script src="/assets/javascript/animation.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
