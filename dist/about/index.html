@@ -49,11 +49,47 @@
 
     <div class="MediaBox" data-media-id="910"> <video preload="auto" muted="true" autoplay="" loop="" playsinline="true" src="https://media.roccat.org/img/product-series/series/teaser/1/Vulcan-WebsiteBackgr-2030x1080-4.mp4"></video> 
         <figure class="position" data-aos="slide-left">
-            <img src="/assets/images/facebook.JPG" alt="">
+            <img src="/assets/images/facebook.JPG" alt="">¨
             <figcaption class="hifi" data-aos="slide-down">
                 <a href="https://hificorner-4957f.firebaseapp.com/"></a>
                 <p class="">Mit navn er Mathias Ferniss. Jeg er 20 år gammel. Jeg kan rigtig godt lig at programmere, jeg er en glad, smilende og sjov person som altid er i positivt humør</p>
             </figcaption>
+            <form name="contact" method="POST" data-netlify="true">
+                <div>
+                    <label for="name" class="form_title">Name</label>
+                    <input id="name" name="name" type="text">
+                </div>
+                <div>
+                    <label for="subject" class="form_title">Subject</label>
+                    <input id="subject" name="subject" type="text">
+                </div>
+                <div>
+                    <label for="phone" class="form_title">Phone</label>
+                    <input id="phone" name="phone" type="text">
+                </div>
+                <div>
+                    <label for="email" class="form_title">Email</label>
+                    <input id="email" name="email" type="text">
+                </div>
+                <div class="field">
+                    <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                </div class="field">
+                    <div data-netlify-recaptcha="true">
+                    </div>
+                    <div class="field">
+                        <input type="file" name="myfile"
+                        id="myfile" placeholder="Upload"
+                        rows="7">
+                        </div>
+                <div>
+                    <button class="btn">
+                        <input type="submit">
+                    </button>
+                </div>
+            </form>
+            </figure>
     </div>
 </main>
 <footer>
