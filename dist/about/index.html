@@ -86,11 +86,11 @@
             <span class="error"></span>
             </div>
 
-        <div class="field">
-            <label for="message" class="form__label">Message:</label>
-            <textarea name="message" id="message" placeholder="Message" class="form__input" cols="30" rows="10"></textarea>
-            <span class="error"></span>
-        </div>
+            <div>
+                <label for="message" class="form__label">Message:</label>
+                <textarea  name="message" id="message" placeholder="Message" class="form__input" cols="30" rows="10" required pattern=".{8,}"></textarea>
+                <span class="error"></span>
+            </div>
         <div>
         </div class="field">
            
@@ -103,7 +103,7 @@
         <div>
             <label for="submit" class="form__label">Send:</label>
             <button class="btn">
-                <input type="submit" class="form__input"> 
+                <input type="submit"> 
             </button>
         </div>
     </form>

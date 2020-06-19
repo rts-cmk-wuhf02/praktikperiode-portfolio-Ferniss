@@ -22,4 +22,7 @@ label {
   label {
     font-size: 20px;
     display: flex;
-    justify-content: space-around; } }
+    justify-content: space-around; }
+  .btn {
+    margin-top: 4px;
+    height: 4em; } }
