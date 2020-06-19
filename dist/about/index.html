@@ -68,16 +68,18 @@
                 <input placeholder="Name" type="text" name="Name" id="Name" class="form__input" required pattern=".{5,}" title="Skriv dit navn">
                 <span class="error"></span>
             </div>
-        <div>
-            <label for="subject" class="form_label">Subject:</label>
-            <input placeholder="Subject" id="subject" name="subject" type="text" class="form__input">
-            <span class="error"></span>
-        </div>
-        <div>
-            <label for="phone" class="form_label">Phone:</label>
-            <input  placeholder="Phone" id="phone" name="phone" type="text" class="form__input">
-                  <span class="error"></span>
-        </div>
+
+            <div>
+                <label for="Subject" class="form_label">Subject:</label>
+                <input placeholder="Subject" type="text" id="Subject" name="Subject" class="form__input" required pattern=".{1,}">
+                <span class="error"></span>
+            </div>
+
+            <div>
+                <label for="phone" class="form_label">Phone:</label>
+                <input  placeholder="Phone" id="number" name="number" type="number" class="form__input" required pattern=".{8,}">
+                <span class="error"></span>
+            </div>
         <div>
             <label for="mail" class="form__label">Mail:</label>
             <input placeholder="Mail" type="mail" name="mail" id="mail" class="form__input" required pattern=".+\.[a-z]{2,}$">
@@ -108,6 +110,7 @@
     </form>
 </footer>
 <script src="/assets/javascript/app.js"></script>
+<script src="/assets/javascript/form.js"></script>
 <script src="/assets/javascript/animation.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
