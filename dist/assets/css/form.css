@@ -1,0 +1,30 @@
+.form__input {
+  height: 100%;
+  width: 96%;
+  padding: 5px;
+  border: solid 2px black;
+  margin-top: 5px; }
+
+label {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+
+@media screen and (min-width: 668px) {
+  form {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10%; }
+  .form__input {
+    height: 30%;
+    display: flex;
+    width: 12vw;
+    padding: 10px;
+    border: solid 2px black;
+    margin-top: 5px; }
+  .disaper {
+    display: none; }
+  .form__input_select {
+    height: 55%; }
+  label {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around; } }

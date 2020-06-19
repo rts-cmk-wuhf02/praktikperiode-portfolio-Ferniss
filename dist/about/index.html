@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/test.css">
     <link rel="stylesheet" href="/assets/css/animation.css">
+    <link rel="stylesheet" href="/assets/css/form.css">
 </head>
 <body>
 <header>
@@ -54,46 +55,52 @@
                 <a href="https://hificorner-4957f.firebaseapp.com/"></a>
                 <p class="">Mit navn er Mathias Ferniss. Jeg er 20 år gammel. Jeg kan rigtig godt lig at programmere, jeg er en glad, smilende og sjov person som altid er i positivt humør</p>
             </figcaption>
-            <form name="contact" method="POST" data-netlify="true">
-                <div>
-                    <label for="name" class="form_title">Name</label>
-                    <input id="name" name="name" type="text">
-                </div>
-                <div>
-                    <label for="subject" class="form_title">Subject</label>
-                    <input id="subject" name="subject" type="text">
-                </div>
-                <div>
-                    <label for="phone" class="form_title">Phone</label>
-                    <input id="phone" name="phone" type="text">
-                </div>
-                <div>
-                    <label for="email" class="form_title">Email</label>
-                    <input id="email" name="email" type="text">
-                </div>
-                <div class="field">
-                    <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                </div class="field">
-                    <div data-netlify-recaptcha="true">
-                    </div>
-                    <div class="field">
-                        <input type="file" name="myfile"
-                        id="myfile" placeholder="Upload"
-                        rows="7">
-                        </div>
-                <div>
-                    <button class="btn">
-                        <input type="submit">
-                    </button>
-                </div>
-            </form>
             </figure>
     </div>
 </main>
 <footer>
+    <!--DEN HER SENDER TIL NETLIFY-->
+    <form name="contact" method="POST" data-netlify="true" class="validate">
+        <div>
+            <div>
+                <label for="Name" class="form__label">Name:</label>
+                <input placeholder="Name" type="text" name="Name" id="Name" class="form__input" required pattern=".{5,}" title="Skriv dit navn">
+                <span class="error"></span>
+            </div>
+        <div>
+            <label for="subject" class="form_label">Subject:</label>
+            <input placeholder="Subject" id="subject" name="subject" type="text" class="form__input">
+            <span class="error"></span>
+        </div>
+        <div>
+            <label for="phone" class="form_label">Phone:</label>
+            <input  placeholder="Phone" id="phone" name="phone" type="text" class="form__input">
+                  <span class="error"></span>
+        </div>
+        <div>
+            <label for="mail" class="form__label">Mail:</label>
+            <input placeholder="Mail" type="mail" name="mail" id="mail" class="form__input" required pattern=".+\.[a-z]{2,}$">
+            <span class="error"></span>
+            </div>
 
+        <div class="field">
+            <textarea name="message" id="message" placeholder="Message" class="form__input" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+        </div class="field">
+            <div data-netlify-recaptcha="true">
+            </div>
+            <div class="field">
+                <input type="file" name="myfile"  class="form__input"
+                id="myfile" placeholder="Upload"
+                rows="7">
+                </div>
+        <div>
+            <button class="btn">
+                <input type="submit" class="form__input"> 
+            </button>
+        </div>
+    </form>
 </footer>
 <script src="/assets/javascript/app.js"></script>
 <script src="/assets/javascript/animation.js"></script>
