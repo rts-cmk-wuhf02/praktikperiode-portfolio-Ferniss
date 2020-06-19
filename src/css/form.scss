@@ -9,10 +9,10 @@ label{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 @media screen and (min-width: 668px){
-    form{
+    .validate{
         display: flex;
         justify-content: space-between;
-        padding-bottom: 10%; 
+        padding-bottom: 5%; 
     }
     .form__input{
         height: 30%;

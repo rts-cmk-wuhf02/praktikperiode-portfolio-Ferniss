@@ -59,9 +59,10 @@
     </div>
 </main>
 <footer>
+
     <!--DEN HER SENDER TIL NETLIFY-->
     <form name="contact" method="POST" data-netlify="true" class="validate">
-        <div>
+        
             <div>
                 <label for="Name" class="form__label">Name:</label>
                 <input placeholder="Name" type="text" name="Name" id="Name" class="form__input" required pattern=".{5,}" title="Skriv dit navn">
@@ -84,6 +85,7 @@
             </div>
 
         <div class="field">
+            <label for="message" class="form__label">Message:</label>
             <textarea name="message" id="message" placeholder="Message" class="form__input" cols="30" rows="10"></textarea>
         </div>
         <div>
@@ -91,6 +93,7 @@
             <div data-netlify-recaptcha="true">
             </div>
             <div class="field">
+                <label for="file" class="form__label">File:</label>
                 <input type="file" name="myfile"  class="form__input"
                 id="myfile" placeholder="Upload"
                 rows="7">
