@@ -36,6 +36,9 @@ self.addEventListener('install', function(event) {
     console.log('service worker installed')
   });
 
+
+
+
 self.addEventListener('activate', function(event) {
     console.log('activate', event)
     event.waitUntil(
@@ -67,6 +70,3 @@ self.addEventListener('fetch', function(event) {
         })
     )
 })
-
-
-
