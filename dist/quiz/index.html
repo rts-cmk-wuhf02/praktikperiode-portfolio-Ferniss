@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/assets/css/test.css">
     <link rel="stylesheet" href="/assets/css/animation.css">
     <link rel="stylesheet" href="/assets/css/form.css">
+    <link rel="stylesheet" href="/assets/css/quiz.css">
     <link rel="manifest" href="/manifest.webmanifest">
     <link rel="apple-touch-icon" href="/images/marioios.png">
 </head>
@@ -23,7 +24,6 @@
             <a href="/index.html" class="logo">Mathias Ferniss</a> 
              
             <li class="pil"><a href="/quiz/index.html">quiz</a></li>
-                    <li class="pil"><a href="#">Alder: 20</a></li>
                     <li class="pil dropdown"><a class="activate droparrow">Skills</a>
                         <ul class="subul">
                             <li>css</li>
@@ -50,60 +50,32 @@
 </header>
 <main>
     <h1 class="h1 text">Quiz spil</h1>
-    
+    <div class="container">
+        <a class="quizStart" target="_blank">
+          <div class="button">
+            <span>Quiz Start</span>
+          </div>
+          <div class="sun"></div>
+        </a>
+      </div>
+
+      <article class="quiz-article">
+          <!-- <section>
+              <h2>Hvornår startede 2 verdenskrig</h2>
+          </section>
+          <section>
+              <p>1930</p>
+              <p>1933</p>
+              <p>1939</p>
+              <p>1940</p>
+          </section> -->
+      </article>
 </main>
 <footer>
-
-    <!--DEN HER SENDER TIL NETLIFY-->
-    <form name="contact" method="POST" data-netlify="true" class="validate">
-        
-            <div>
-                <label for="Name" class="form__label">Name:</label>
-                <input placeholder="Name" type="text" name="Name" id="Name" class="form__input" required pattern=".{5,}" title="Skriv dit navn">
-                <span class="error"></span>
-            </div>
-
-            <div>
-                <label for="Subject" class="form_label">Subject:</label>
-                <input placeholder="Subject" type="text" id="Subject" name="Subject" class="form__input" required pattern=".{1,}">
-                <span class="error"></span>
-            </div>
-
-            <div>
-                <label for="phone" class="form_label">Phone:</label>
-                <input  placeholder="Phone" id="number" name="number" type="number" class="form__input" required pattern=".{8,}">
-                <span class="error"></span>
-            </div>
-        <div>
-            <label for="mail" class="form__label">Mail:</label>
-            <input placeholder="Mail" type="mail" name="mail" id="mail" class="form__input" required pattern=".+\.[a-z]{2,}$">
-            <span class="error"></span>
-            </div>
-
-            <div>
-                <label for="message" class="form__label">Message:</label>
-                <textarea  name="message" id="message" placeholder="Message" class="form__input" cols="30" rows="10" required pattern=".{8,}"></textarea>
-                <span class="error"></span>
-            </div>
-        <div>
-        </div class="field">
-           
-            <div class="field">
-                <label for="file" class="form__label">File:</label>
-                <input type="file" name="myfile"  class="form__input"
-                id="myfile" placeholder="Upload"
-                rows="7">
-                </div>
-        <div>
-            <label for="submit" class="form__label">Send:</label>
-            <button class="btn">
-                <input type="submit"> 
-            </button>
-        </div>
-    </form>
+    
 </footer>
 <script src="/assets/javascript/app.js"></script>
-<script src="/assets/javascript/form.js"></script>
+<script src="/assets/javascript/quiz.js"></script>
 <script src="/assets/javascript/animation.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="/test.js"></script>
