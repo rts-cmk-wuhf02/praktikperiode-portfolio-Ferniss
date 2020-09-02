@@ -14,12 +14,21 @@ document.addEventListener('DOMContentLoaded', function () {
       sandt.style.backgroundColor = "lightgreen";
 
       if (sandt.style.backgroundColor = "lightgreen") {
-        falsk.style.visibilty = "hidden";
+        falsk.forEach(function (elements) {
+          elements.disabled = true;
+        });
       }
     });
     falsk.forEach(function (element) {
       element.addEventListener('click', function () {
         element.style.backgroundColor = "red";
+
+        if (element.style.backgroundColor = "red") {
+          falsk.forEach(function (elements) {
+            elements.disabled = true;
+            sandt.disabled = true;
+          });
+        }
       });
     }); //Her starter det andet spørgsmål
 

@@ -23,12 +23,20 @@ document.addEventListener('DOMContentLoaded', () => {
         sandt.addEventListener('click', ()=>{
             sandt.style.backgroundColor = "lightgreen";
             if (sandt.style.backgroundColor = "lightgreen") {
-                falsk.style.visibilty = "hidden";
+                falsk.forEach(elements => {
+                    elements.disabled = true;
+                })
             }
         })
         falsk.forEach(element => {
             element.addEventListener('click', () =>{
                 element.style.backgroundColor = "red";
+                if (element.style.backgroundColor = "red") {
+                    falsk.forEach(elements => {
+                        elements.disabled = true;
+                        sandt.disabled = true;
+                    })
+                }
             })
         });
 
